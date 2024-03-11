@@ -1,0 +1,10 @@
+{
+  "Chrome@74.0:Windows 8" : {
+    "network" : true,
+    "terminal" : true,
+    "build" : "Testcafe Build name",
+    "name" : "Testcafe test name"
+  }
+}
+
+

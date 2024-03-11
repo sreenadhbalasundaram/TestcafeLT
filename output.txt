@@ -1,0 +1,39 @@
+Using locally installed version of TestCafe.
+Test name: test/testwithcurl.js
+Session ID not found in the file.
+Current version of Node Tunnel:  4.0.5
+Verifying credentials
+Auth succeeded
+Checking for updates
+Binary already at latest version
+Starting tunnel
+Tunnel successfully initiated. You can start testing now
+capabilities {
+  tunnel: true,
+  plugin: 'testcafe-browser-provider-lambdatest:3.0.0',
+  browserName: 'chrome',
+  version: '74.0',
+  platform: 'windows 8',
+  network: true,
+  terminal: true,
+  build: 'samplexx',
+  name: 'Testwithcurl',
+  tunnelName: 'TestCafe0_sreenadhb-1710164379995'
+}
+ Running tests in:
+ - Chrome 74.0.3729.131 / Windows 8 ( https://automation.lambdatest.com/logs/?sessionID=b3dcfe34f71673c5dfefd8de55e51bf8 )
+
+ A set of examples that illustrate how to use TestCafe API
+ ✓ Text typing basics
+ ✓ Click an array of labels and then check their states
+ ✓ Dealing with text using keyboard
+ ✓ Moving the slider
+ ✓ Dealing with text using selection
+ ✓ Handle native confirmation dialog
+ ✓ Pick option from select
+ ✓ Filling a form
+Session ID: b3dcfe34f71673c5dfefd8de55e51bf8
+Curl command output: {"data":"File have been uploaded successfully to our lambda storage","status":"success"}
+
+
+ 8 passed (41s)
