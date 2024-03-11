@@ -26,18 +26,6 @@ For Single Configuration
 $ testcafe --config-file .testcaferc.js > output.txt
 ```
 
-For Parallel/Multiple Configuration
-
-```sh
-$ testcafe "lambdatest:Chrome@74.0:Windows 8","lambdatest:Chrome@75.0:Windows 10" "path/to/test/file.js"
-```
-
-For Real Devices
-```sh
-$ testcafe "lambdatest:Galaxy S8@9:android:isReal" "path/to/test/file.js"
-```
-
-
 
 ## Configuration
 
