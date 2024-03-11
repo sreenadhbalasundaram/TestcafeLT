@@ -1,4 +1,4 @@
-# npm Plugin For TestCafe Integration With LambdaTest
+# Sample test for uploading terminal logs to Lambdatest 
 
 [![Testcafe Health Check](https://github.com/LambdaTest/testcafe-browser-provider-lambdatest/actions/workflows/main.yml/badge.svg)](https://github.com/LambdaTest/testcafe-browser-provider-lambdatest/actions/workflows/main.yml)
 
@@ -23,7 +23,7 @@ If you run tests from the command line, use the browser alias when specifying br
 For Single Configuration
 
 ```sh
-$ testcafe "lambdatest:Chrome@74.0:Windows 8" "path/to/test/file.js"
+$ testcafe --config-file .testcaferc.js > output.txt
 ```
 
 For Parallel/Multiple Configuration
@@ -38,49 +38,14 @@ $ testcafe "lambdatest:Galaxy S8@9:android:isReal" "path/to/test/file.js"
 ```
 
 
-```
-Not valid for real Devices: ---
-                              v
-```
-When you use API, pass the alias to the `browsers()` method:
-
-```js
-testCafe
-    .createRunner()
-    .src('path/to/test/file.js')
-    .browsers('lambdatest:Chrome@74.0:Windows 8')
-    .run();
-```
-
-## Build Plugin Locally (Development Mode)
-
-1.  Clone this repository,
-2.  Rename Project
-```sh
-$ mv testcafe-browser-provider-lambdatest lambdatest
-```
-3. Go to the project path
-```sh
-$ cd lambdatest
-```
-4. Install Packages and Build
-```sh
-$ npm i
-$ npm run build
-```
-5. Link Testcafe with lambdatest
-```sh
-$ sudo npm link
-```
-6. [See this for Credentials](#usage)
 
 ## Configuration
 
 Use the following environment variables to set additional configuration options:
 
- - `LT_TEST_NAME` - Test name on LambdaTest.
- - `LT_BUILD` - Build name on LambdaTest.
- - `LT_CAPABILITY_PATH` - Path to a file which contains additional capability options as JSON file (eg. config.json)
+ - `LT_TEST_NAME` - Test name on LambdaTest. (This can be changed without defining the environment variable from browser.json file in this repo as well update the "name" capability)
+ - `LT_BUILD` - Build name on LambdaTest. (This can be changed without defining the environment variable from browser.json file in this repo as well update the "build" capability)
+ - `LT_CAPABILITY_PATH` - Path to a file which contains additional capability options as JSON file (browser.json file in this repo path : test/browser.json)
 
     ```js
     {
@@ -121,7 +86,7 @@ Example:
 export LT_RESOLUTION="1920x1080"
 export LT_TEST_NAME="Test TestCafe"
 export LT_BUILD="Build x"
-testcafe "lambdatest:Chrome","lambdatest:Chrome@74.0:Windows 8" tests/
+
 ```
 
 ```
