@@ -19,8 +19,8 @@ You can determine the available browser aliases by running
 $ testcafe -b lambdatest
 ```
 
-If you run tests from the command line, use the browser alias when specifying browsers:
-For Single Configuration
+If you run tests from the command line, 
+Run Command 
 
 ```sh
 $ testcafe --config-file .testcaferc.js > output.txt
