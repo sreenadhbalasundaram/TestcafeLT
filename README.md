@@ -31,8 +31,8 @@ $ testcafe --config-file .testcaferc.js > output.txt
 
 Use the following environment variables to set additional configuration options:
 
- - `LT_TEST_NAME` - Test name on LambdaTest. (This can be changed without defining the environment variable from browser.json file in this repo as well update the "name" capability)
- - `LT_BUILD` - Build name on LambdaTest. (This can be changed without defining the environment variable from browser.json file in this repo as well update the "build" capability)
+ - `LT_TEST_NAME` - Test name on LambdaTest. (This can be changed without defining the environment variable from browser.json file in this repo by updating the "name" capability)
+ - `LT_BUILD` - Build name on LambdaTest. (This can be changed without defining the environment variable from browser.json file in this repo by updating the "build" capability)
  - `LT_CAPABILITY_PATH` - Path to a file which contains additional capability options as JSON file (browser.json file in this repo path : test/browser.json)
 
     ```js
